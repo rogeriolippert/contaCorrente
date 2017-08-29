@@ -7,8 +7,8 @@ public class Conta {
 	
 	public Conta(String titular, String agencia, String conta) {
 		this.titular = titular;
-		this.agencia = agencia;
-		this.conta = conta;
+		this.setAgencia(agencia);
+		this.setConta(conta);
 	}
 	
 	public String GetTitular() {
@@ -17,6 +17,22 @@ public class Conta {
 	
 	public double GetSaldo() {
 		return 0;
+	}
+
+	public String getConta() {
+		return conta;
+	}
+
+	public void setConta(String conta) {
+		this.conta = conta;
+	}
+
+	public String getAgencia() {
+		return agencia;
+	}
+
+	public void setAgencia(String agencia) {
+		this.agencia = agencia;
 	}
 }
 

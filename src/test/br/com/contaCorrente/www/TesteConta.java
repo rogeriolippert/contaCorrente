@@ -4,13 +4,13 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class Conta {
+public class TesteConta {
 
 private Conta conta;
 	
 	@Before
 	public void before() {
-		conta = new Conta("Rogerio", "3-3", "225-6");
+		conta = new Conta("Marcelo", "2-2", "123-4");
 	}
 
 	@Test
@@ -18,5 +18,7 @@ private Conta conta;
 		assertEquals(conta.GetTitular(), "Rogerio");
 		assertEquals(conta.GetSaldo(), 0, 0);
 	}
+
+}
 
 }
